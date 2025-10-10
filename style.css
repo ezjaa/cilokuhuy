@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#uhuy {
+    width: 100%;
+    height: 800px;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+    
+}
+
+.sampul img {
+    width: 100%;
+    height: 25%;
+    border-radius: 15px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.4);
+    z-index: 1;
+    transform: translateY(-33px);
+}
+
+.profil img {
+    width: 35%;
+    height: auto;
+    border-radius: 100%;
+    z-index: 10;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+    transform: translateY(-128px);
+}
+
+.profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-judul {
+    font-family: Poppins;
+    text-align: center;
+}
+
+.judul {
+    font-size: 20px;
+    font-weight: bold;
+    transform: translateY(-130px);
+}
+
+.deskripsi {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1;
+    transform: translateY(-144px);
+    width: 250px;
+    margin: 0 auto;
+}
+
+.sosmed-icon img {
+    width: 25px;
+    height: auto;
+    padding: 20px;
+    transform: translateY(-150px);
+}
+
+.sosmed-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pesan {
+    width: 75%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+    margin: 0 auto;
+    transform: translateY(-150px);
+    text-align: center;
+    font-weight: normal;
+    font-size: 8px;
+    color: white;
+    padding-top: 2px;
+}
+
+#pesan {
+    background-color: #b6b6b6;
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pesan h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.gofood, .shopeefood, .grabfood {
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.6);
+    width: 80%;
+    height: 35px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 6px;
+    font-weight: normal;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gofood {
+    background-color: #ee2737;
+}
+
+.shopeefood {
+    background-color: #f63c01;
+}
+
+.grabfood {
+    background-color: #00b14f;
+}
