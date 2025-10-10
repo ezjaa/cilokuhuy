@@ -55,16 +55,14 @@ src="https://www.facebook.com/tr?id=1351365793223841&ev=PageView&noscript=1"
                      class="klik gofood"
                      target="_blank"
                      rel="noopener noreferrer"
-                     onclick="fbq('track','ClickGoFood'); 
-                     setTimeout(()=>{ window.open(this.href,'_blank'); },150); return false;">
+                     onclick="event.preventDefault(); fbq('track','ClickGoFood'); setTimeout(()=>{ window.location = this.href; },150);">
                      <h1>GOFOOD</h1>
                  </a>
                  <a href="https://spf.shopee.co.id/4VU3vyCBvE" 
                      class="klik shopeefood"
                      target="_blank"
                      rel="noopener noreferrer"
-                     onclick="fbq('track','ClickShopeeFood'); 
-                     setTimeout(()=>{ window.open(this.href,'_blank'); },150); return false;">
+                     onclick="event.preventDefault(); fbq('track','ClickGoFood'); setTimeout(()=>{ window.location = this.href; },150);">
                      <h1>SHOPEE FOOD</h1>
                  </a>
                  <a href="#" 
@@ -73,7 +71,7 @@ src="https://www.facebook.com/tr?id=1351365793223841&ev=PageView&noscript=1"
                      rel="noopener noreferrer"
                      onclick="fbq('track','ClickGrabFood'); 
                      setTimeout(()=>{ window.open(this.href,'_blank'); },150); return false;">
-                     <h1>GRAB FOOD (segera hadir)</h1></h1>
+                     <h1>GRAB FOOD (segera hadir)</h1>
                  </a>
              </div>
           </section>
