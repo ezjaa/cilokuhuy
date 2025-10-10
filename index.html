@@ -38,7 +38,10 @@ src="https://www.facebook.com/tr?id=1351365793223841&ev=PageView&noscript=1"
                 <P class="deskripsi">salah satu jajanan legendaris dari jawa barat nih, cobain sekarang!</P>
              </div>
              <div class="sosmed-icon">
-                 <a href="https://www.facebook.com/profile.php?id=61581576727278" target="_blank">
+                 <a href="https://www.facebook.com/profile.php?id=61581576727278" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onclick="event.preventDefault(); fbq('track','ClickFB'); setTimeout(()=>{ window.location = this.href; },150);">
                     <img src="img/icon/fb.svg" alt="facebook">
                  </a>
                  <a href="https://www.instagram.com/cilokuhuy__?igsh=cGhwemV1ejJqdHd4" target="_blank">
@@ -69,8 +72,7 @@ src="https://www.facebook.com/tr?id=1351365793223841&ev=PageView&noscript=1"
                      class="klik grabfood"
                      target="_blank"
                      rel="noopener noreferrer"
-                     onclick="fbq('track','ClickGrabFood'); 
-                     setTimeout(()=>{ window.open(this.href,'_blank'); },150); return false;">
+                     onclick="event.preventDefault(); fbq('track','ClickGoFood'); setTimeout(()=>{ window.location = this.href; },150);">
                      <h1>GRAB FOOD (segera hadir)</h1>
                  </a>
              </div>
