@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width",initial-scale=1.0>
-        <title>cilokuhuy</title>
-        <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>cilokuhuy</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -22,66 +23,81 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1351365793223841&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    </head>
-    <body>
-        <section id="uhuy">
-            <div class="sampul">
-                <img src="img/banner.jpg" alt="sampul">
-            </div>
 
-            <div class="profil">
-                <img src="img/profil.jpg" alt="profil">
-            </div>
-            
-            <div class="text-judul">
-                <h1 class="judul">CILOK UHUY LEGENDARIS</h1>
-                <P class="deskripsi">salah satu jajanan legendaris dari jawa barat nih, cobain sekarang!</P>
-             </div>
-             <div class="sosmed-icon">
-                 <a href="https://www.facebook.com/profile.php?id=61581576727278" 
-				    target="_blank"
-				    rel="noopener noreferrer" 
-					onclick="fbq('track','ClickFB');">
-                    <img src="img/icon/fb.svg" alt="facebook">
-                 </a>
-                 <a href="https://www.instagram.com/cilokuhuy__?igsh=cGhwemV1ejJqdHd4" 
-				    target="_blank"
-					rel="noopener noreferrer" 
-					onclick="fbq('track','ClickIG');">
-                    <img src="img/icon/ig.svg" alt="instagram">
-                 </a>
-                 <a href="https://wa.me/+62085212694608" 
-				    target="_blank"
-					rel="noopener noreferrer" 
-					onclick="fbq('track','ClickWA');">
-                    <img src="img/icon/wa.svg" alt="whatsapp">
-                 </a>
-             </div>
-          <section id="pesan">
-             <h1>kamu bisa pesan disini</h1>
-             <div class="btn">
-                 <a href="https://gofood.link/a/NpWVFYu" 
-				     target="_blank" class="klik gofood" 
-					 rel="noopener noreferrer" 
-					 onclick="fbq('track','ClickGoFood');">
-                     <h1>GOFOOD</h1>
-                 </a>
-                 <a href="https://spf.shopee.co.id/4VU3vyCBvE" 
-				     target="_blank" 
-					 class="klik shopeefood"
-					 rel="noopener noreferrer" 
-					 onclick="fbq('track','ClickShopeeFood');">
-                     <h1>SHOPEE FOOD</h1>
-                 </a>
-                 <a href="#" 
-				     target="_blank" 
-					 class="klik grabfood"
-					 rel="noopener noreferrer" 
-					 onclick="fbq('track','ClickGrabFood');">
-                     <h1>GRAB FOOD (segera hadir)</h1></h1>
-                 </a>
-             </div>
-          </section>
-        </section>
-    </body>
+</head>
+<body>
+    <section id="uhuy" class="uhuy">
+
+        <!--profil-->
+        <div class="sampul"></div>
+        <div class="profil"></div>
+        <h1>CILOK UHUY LEGENDARIS</h1>
+        <p>salah satu jajanan legendaris dari jawa barat nih, cobain sekarang!</p>
+
+        <!--sosmed-link-->
+        <div class="sosmed">
+
+            <!--facebook--> 
+            <a href="https://facebook.com/profile.php?id=61581576727278" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                onclick="fbq('track','ClickFB');">
+                <img src="img/icon/fb.svg" alt="facebook">
+            </a>
+
+            <!--instagram-->
+            <a href="https://www.instagram.com/cilokuhuy__" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onclick="fbq('track','ClickIG');">
+                <img src="img/icon/ig.svg" alt="instagram">
+            </a>
+
+            <!--whatsapp-->
+            <a href="https://wa.me/+6285212694608"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                onclick="fbq('track','ClickWA');">
+                <img src="img/icon/wa.svg" alt="whatsapp"></a>
+        </div>
+
+        <!--merchant-link-->
+        <div class="merchant">
+            <h1>kamu bisa pesan disini</h1>
+
+            <!--gofood-->
+            <a href="https://gofood.link/a/NpWVFYu" 
+                class="btn" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                onclick="fbq('track','ClickGoFood');">
+                <img src="img/icon/gofood.svg" alt="gofood">
+            </a>
+
+            <!--shopeefood-->
+            <a href="https://spf.shopee.co.id/AUlJQBimXc" 
+                class="btn" 
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="fbq('track','ClickShopeeFood');">
+                <img src="img/icon/shopeefood.svg" alt="shopee-food">
+            </a>
+
+            <!--grabfood-->
+            <a href="#" 
+                class="btn" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onclick="handleGrabClick(event)">
+                <img src="img/icon/grabfood.svg" alt="grab-food">
+            </a>
+        </div>
+
+        <!--cc-->
+        <div class="cc">
+            <h1>© 2025 Cilok Uhuy. All rights reserved.</h1>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
 </html>
